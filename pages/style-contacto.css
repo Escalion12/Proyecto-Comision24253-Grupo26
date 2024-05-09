@@ -10,38 +10,37 @@
     /*fuente primaria*/
     --primary-font: "Arial";
     --secondary-font: "Helvetica";
-
-    
     /* Arial, sans-serif, Helvetica; */
 }
 
 * {
     box-sizing: border-box;
-    padding: 10;
-    margin: 10;
-    
+    padding: 0;
+    margin: 0;
 }
 
 /* Formato fondo de la pagina y el color del texto */
 body{
-    background-color: #38485c;
-    color: var(--primary-color);
-    /* color: #fff; */
+    background-color: #fff;
+    color: #38485c;
+    font-family: "Quicksand", sans-serif;
+    box-sizing: border-box;
 }
 
 /* Formato de los enlaces */
 a {
-    text-decoration: none; /* Quita el subrayado de los enlaces */
-    color: #fff;
-    transition: background-color 0.5s;
+    text-decoration: none;
+    color: #38485c;
+    font-weight: bold;
 }
 
 ul {
-    list-style-type: none; /* Le quita el punto de listado a la lista de las ul */
+    list-style: none;
 }
 
 ul li {
-    text-decoration: none; /* Le quita el punto de listado a la lista de las ul */
+    text-decoration: none; 
+    /* Le quita el punto de listado a la lista de las ul */
 }
 
 
@@ -54,8 +53,7 @@ ul li {
 /* Efecto de subrayado al pasar por encima del texto */
 nav a:hover {
     text-decoration: underline;
-/*     background-color:var(--secondary-color);
-    color:var(--bg-color); */
+    color: #007bc7;
 }
 
 /* Formato para organizar posición de la barra superior */
