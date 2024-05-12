@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,9 +9,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style.css">
-    <!-- <link rel="stylesheet" href="./style-contacto.css"> -->
     <title>PodCast - Contacto</title>
 </head>
+
 <body>
     <section class="container">
         <header id="header">
@@ -29,72 +30,66 @@
                 </ul>
             </nav>
         </header>
-    <main>
+        <main>
+            <!-- Formulario -->
 
-        <div class="contact_form">
+            <div class="contact_form_contacto">
+                <div class="form">
+                    <h1 class="titulo-formulario">Formulario de contacto</h1><br>
+                    <h4>Escríbenos y en breve nos pondremos en contacto contigo</h4>
+                    <form action="#" class="formulario" id="loginForm">
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="mail-outline"></ion-icon>
+                            </span>
+                            <input type="text" required id="email">
+                            <label>Nombre</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="mail-outline"></ion-icon>
+                            </span>
+                            <input type="tel" required id="email">
+                            <label>Teléfono</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="mail-outline"></ion-icon>
+                            </span>
+                            <input type="email" required id="email">
+                            <label>Email</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="mail-outline"></ion-icon>
+                            </span>
+                            <input type="text" required id="email">
+                            <label>Asunto</label>
+                        </div>
 
-            <div class="formulario">			
-          <h1 class="titulo-formulario">Formulario de contacto</h1>
-            <h2>Escríbenos y en breve los pondremos en contacto contigo</h2>
-    
-                        <!-- FORMULARIO PHP -->
-                        <form action="submeter-formulario.php" method="post">				
-    
-                            
-                                    <p>
-                                        <label for="nombre" class="colocar_nombre">Nombre
-                                            <span class="obligatorio">*</span>
-                                        </label>
-                                        <br>
-                                            <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
-                                    </p>
-                                
-                                    <p>
-                                        <label for="email" class="colocar_email">Email
-                                            <span class="obligatorio">*</span>
-                                        </label>
-                                        <br>
-                                            <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
-                                    </p>
-                            
-                                    <p>
-                                        <label for="telefone" class="colocar_telefono">Teléfono
-                                        </label>
-                                        <br>
-                                            <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
-                                    </p>		
-                                		
-                                
-                                    <p>
-                                        <label for="asunto" class="colocar_asunto">Asunto
-                                            <span class="obligatorio">*</span>
-                                        </label>
-                                        <br>
-                                            <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
-                                    </p>		
-                                
-                                    <p>
-                                        <label for="mensaje" class="colocar_mensaje">Mensaje
-                                            <span class="obligatorio">*</span>
-                                        </label>
-                                        <br>              
-                                             <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
-                                       </p>	  								
-                                
-                                    <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
-    
-                                    <p class="aviso">
-                                        <span class="obligatorio"> * </span>los campos son obligatorios.
-                                    </p>					
-                            
-                        </form>
-            </div>	
-        </div>
+                        <div class="input-box">
+                            <label>Mensaje</label>
+                            <br>
+                            <span class="icon"><ion-icon name="mail-outline"></ion-icon>
+                            </span>
+                            <input type="text" required id="email">
+                        </div>
+                        <!-- Opcion de suscribirse a -->
+                        <div class="recuerdame">
+                            <label><input type="checkbox">Quiero recibir novedades.
+                            </label>
 
-       
-    </main>
+                        </div>
+
+                        <button type="submit" class="btn">ENVIAR</button>
+                    </div>
+
+                        
+
+                    </form>
+                </div>
+            </div>
+
+        </main>
     </section>
-    <footer>
+
+    <footer style="position:fixed;">
         <ul>
             <li><a href="#header">Volver Arriba</a></li>
             <li><a href="./contacto.html">Contacto</a></li>
@@ -103,8 +98,6 @@
             <li><a href="./canales.html">Canales</a></li>
         </ul>
     </footer>
-    </body>
+</body>
 
-</html> 
-
-
+</html>
