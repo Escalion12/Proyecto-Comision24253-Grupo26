@@ -1,4 +1,4 @@
-/*
+/* 
 COLORES BA
 GRIS: #38485c
 amarillo #ffdb2e
@@ -68,6 +68,11 @@ nav a:hover {
 
 .nav-main ul li a {
   color: white;
+  transition: color 0.3s ease;
+}
+
+.nav-main ul li a:hover {
+  color: #ffdb2e;
 }
 
 /* CARDS */
@@ -103,6 +108,11 @@ nav a:hover {
   background-color: #ffffff;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
     0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
 }
 
 .card img {
@@ -153,6 +163,7 @@ nav a:hover {
   border: none;
   background-color: transparent;
 }
+
 .boton2:hover {
   color: #374151;
 }
@@ -181,13 +192,16 @@ nav a:hover {
 
 footer ul li a {
   color: #fff;
+  transition: color 0.3s ease;
 }
 
 footer ul li a:hover {
   text-decoration: underline;
+  color: #ffdb2e;
 }
 
 footer {
+  width: 100%;
   font-size: 17px;
   display: flex;
   align-items: center;
@@ -247,15 +261,18 @@ footer ul li {
   align-items: center;
   margin-top: 100px;
 }
+
 .contact_form .form {
   width: 100%;
   padding: 40px;
 }
+
 .form h2 {
   font-size: 2em;
   color: #38485c;
   text-align: center;
 }
+
 .input-box {
   position: relative;
   width: 100%;
@@ -263,11 +280,13 @@ footer ul li {
   border-bottom: 2px solid #1c2127;
   margin: 30px 0;
 }
+
 .input-box input {
   font-size: 1em;
   color: #1c2127;
   font-weight: 600;
 }
+
 .recuerdame {
   font-size: 0.9em;
   color: #1c2127;
@@ -276,10 +295,12 @@ footer ul li {
   display: flex;
   justify-content: space-between;
 }
+
 .recuerdame label input {
   accent-color: #1c2127;
   margin-right: 3px;
 }
+
 .recuerdame a {
   color: #1c2127;
   text-decoration: none;
@@ -288,6 +309,7 @@ footer ul li {
 .recuerdame a:hover {
   text-decoration: underline;
 }
+
 .btn {
   width: 100%;
   height: 45px;
@@ -300,6 +322,7 @@ footer ul li {
   color: #fff;
   font-weight: 500;
 }
+
 .registrase {
   font-size: 0.9em;
   color: #1c2127;
@@ -313,19 +336,39 @@ footer ul li {
   text-decoration: none;
   font-weight: 600;
 }
+
 .registrase p a:hover {
   text-decoration: underline;
 }
 
-footer {
-  font-size: 17px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-bottom: 0;
-  background-color: #38485c;
-  margin-top: 300px;
-  bottom: 0;
-  left: 0;
-  width: 100%;
+@media only screen and (max-width: 1024px) {
+  .principal {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .card div h3 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .card div p {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .principal {
+    grid-template-columns: 1fr;
+  }
+
+  .card div h3 {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .card div p {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
 }
