@@ -21,7 +21,6 @@ body {
 
 a {
   text-decoration: none;
-  color: #38485c;
   font-weight: bold;
 }
 
@@ -42,7 +41,6 @@ ul li {
 
 nav a:hover {
   text-decoration: underline;
-  color: #007bc7;
 }
 
 .nav-main {
@@ -74,6 +72,73 @@ nav a:hover {
 .nav-main ul li a:hover {
   color: #ffdb2e;
 }
+
+
+
+/* nav mobile*/
+
+.nav-main a {
+  color: white;
+  transition: color 0.3s ease;
+  margin-right: 50px;
+}
+
+.nav-main a:hover {
+  color: #ffdb2e;
+
+} 
+
+header .overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  background-color: #38485cf7;
+  overflow: hidden;
+  transition: all 0.3s ease 0s;
+}
+
+header .overlay .overlay-content{
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.overlay .overlay-content a{
+  padding: 15px;
+  font-size: 36px;
+  display: block;
+  transition: all 0.3s ease 0s;
+  font-weight: 700;
+  color: #fff;
+}
+
+.overlay a:hover,
+.overlay a:focus{
+  color: #ffdb2e;
+}
+
+.overlay .close {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 65px;
+}
+
+.menu {
+  display: none;
+}
+
+/* carousel  */
+.carousel-indicators {
+  z-index: 1;
+}
+
 
 /* CARDS */
 
@@ -355,6 +420,21 @@ footer ul li {
     font-size: 0.875rem;
     line-height: 1.25rem;
   }
+
+  .overlay a{
+    font-size: 20px;
+  }
+  .overlay .close{
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+  .nav-main ul li{
+    display: none;
+  }
+  .menu {
+    display: inherit;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -371,4 +451,15 @@ footer ul li {
     font-size: 0.75rem;
     line-height: 1rem;
   }
+  
+  .contenedor-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  footer ul {
+    flex-direction: column;
+  }
+
 }
