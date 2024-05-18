@@ -8,26 +8,45 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../style.css">
-<!--     <link rel="stylesheet" href="../styletom.css"> -->
+    <!-- <link rel="stylesheet" href="../style.css"> -->
+    <link rel="stylesheet" href="../styletom.css"> 
     <title>PodCast - Contacto</title>
 </head>
 <body>
-        <header id="header">
-            <nav class="nav-main">
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="./contacto.html">Contacto</a></li>
-                    <li><a href="./categorias.html">Categorias</a></li>
-                    <li><a href="./programas.html">Programas</a></li>
-                    <li><a href="./canales.html">Canales</a></li>
-                </ul>
-                <ul>
-                    <li><a href="./register.html">Registrarme</a></li>
-                    <li><a href="./login.html">Iniciar Sesion</a></li>
-                </ul>
-            </nav>
-        </header>
+    <header>
+        <!-- NAVEGACION -->
+                <!-- nav desktop -->
+        <nav class="nav-main">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+                <li><a href="./categorias.html">Categorias</a></li>
+                <li><a href="./programas.html">Programas</a></li>
+                <li><a href="./canales.html">Canales</a></li>
+            </ul>
+            <ul>
+                <li><a href="./register.html">Registrarme</a></li>
+                <li><a href="./login.html">Iniciar Sesion</a></li>
+            </ul>
+            <a onclick="openNav()" class="menu" href="#">Menú</a>
+            <div class="overlay" id="mobile-menu">
+                <a onclick="closeNav()" href="#" class="close">&times;</a>
+                <div class="overlay-content">
+                        <a href="../index.html">Inicio</a>
+                        <a href="./contacto.html">Contacto</a>
+                        <a href="./categorias.html">Categorias</a>
+                        <a href="./programas.html">Programas</a>
+                        <a href="./canales.html">Canales</a>
+                        <a href="./register.html">Registrarme</a>
+                        <a href="./login.html">Iniciar Sesion</a>
+                    
+                </div>
+            </div>
+        </nav>
+
+        <!-- nav mobile -->
+        
+    </header>
         <main>
             <section class="container">
             <!-- Formulario -->
@@ -98,6 +117,7 @@
             <li><a href="./canales.html">Canales</a></li>
         </ul>
     </footer>
+    <script src="../nav.js"></script>
 </body>
 
 </html>
