@@ -48,60 +48,40 @@
         
     </header>
         <main>
-            <section class="container">
-            <!-- Formulario -->
-
-            <div class="contact_form_contacto">
-                <div class="form">
+            <div id="contacto" class="contacto">
+            
+                <form class="formulario" action="#" method="POST">
                     <h1 class="titulo-formulario">Formulario de contacto</h1><br>
-                    <h4>Escríbenos y en breve nos pondremos en contacto contigo</h4>
-                    <form action="#" class="formulario" id="loginForm">
-                        <div class="input-box">
-                            <span class="icon"><ion-icon name="mail-outline"></ion-icon>
-                            </span>
-                            <input type="text" required id="email">
+                    <legend>Contactános llenando todos los campos</legend>
+    
+                    <div class="contenedor-campos">
+                        <div class="campo">
                             <label>Nombre</label>
+    
+                            <input type="text" name="nombre" placeholder="Nombre" required>
                         </div>
-                        <div class="input-box">
-                            <span class="icon"><ion-icon name="mail-outline"></ion-icon>
-                            </span>
-                            <input type="tel" required id="email">
+                        <div class="campo">
                             <label>Teléfono</label>
+    
+                            <input type="tel" name="telefono" placeholder="Teléfono">
                         </div>
-                        <div class="input-box">
-                            <span class="icon"><ion-icon name="mail-outline"></ion-icon>
-                            </span>
-                            <input type="email" required id="email">
-                            <label>Email</label>
+                        <div class="campo w-100">
+                            <label>Correo</label>
+    
+                            <input type="mail" name="correo" placeholder="Mail">
                         </div>
-                        <div class="input-box">
-                            <span class="icon"><ion-icon name="mail-outline"></ion-icon>
-                            </span>
-                            <input type="text" required id="email">
-                            <label>Asunto</label>
+                        <div class="campo w-100">
+                            <label>Mensaje:</label>
+    
+                            <textarea></textarea>
                         </div>
-
-                        <div class="input-box">
-                            <label>Mensaje</label>
-                            <br>
-                            <span class="icon"><ion-icon name="mail-outline"></ion-icon>
-                            </span>
-                            <input type="text" required id="email">
-                        </div>
-                        <!-- Opcion de suscribirse a -->
-                        <div class="recuerdame">
-                            <label><input type="checkbox">Quiero recibir novedades.
-                            </label>
-
-                        </div>
-
-                        <button type="submit" class="btn">ENVIAR</button>
+                    </div><!--.contenedor-campos-->
+                    <div class="recuerdame">
+                        <label><input type="checkbox">Quiero recibir novedades.
+                        </label>
                     </div>
-
-                        
-
-                    </form>
-                </div>
+                    <button type="submit" class="btn">ENVIAR</button>
+                </form>
             </div>
 
         </main>

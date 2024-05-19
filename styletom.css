@@ -237,8 +237,8 @@ header .overlay .overlay-content{
   padding: 1rem;
   border-radius: 0.5rem;
   background-color: #ffffff;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.4),
+    0 2px 4px -1px rgba(0, 0, 0, 0.5);
 }
 
 .aside ul {
@@ -267,7 +267,7 @@ footer ul li a:hover {
 
 footer {
   width: 100%;
-  font-size: 17px;
+  font-size: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -553,3 +553,96 @@ footer ul li {
   .registrase p a:hover{
       text-decoration: underline;
   }
+
+
+  /* CSS Contacto */
+  .formulario {
+    background-color: var(#38485c);
+    padding: 2rem;
+    border-radius: 10px;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+    background: #f4f4fc;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    margin: 3em; 
+}
+
+.formulario legend {
+  text-align: center;
+  font-size: 1.2rem;
+  color: var(--primario);
+  margin-bottom: 2rem;
+  display: block;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+@media (min-width:768px) {
+    .formulario {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+}
+.contenedor-campos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.campo {
+    margin-bottom: 1rem;
+    width: 100%;
+}
+@media (min-width:480px) {
+    .campo {
+        display: flex;
+        align-items: center;
+    }
+}
+@media (min-width: 768px) {
+    .campo{
+        flex: 0 0 calc(50% - .5rem)
+    }
+}
+.campo label {
+    color: var(--blanco);
+    font-weight: 700;
+    margin-bottom: .5rem;
+    display: block;
+}
+@media (min-width:480px) {
+    .campo label {
+        flex: 0 0 90px;
+    }
+}
+.campo input[type="text"],
+.campo input[type="tel"],
+.campo input[type="mail"],
+.campo textarea {
+    width: 100%;
+    padding: .5rem;
+    border: none;
+    border-radius: .5rem;
+}
+@media (min-width: 768px) {
+    :is(.campo) :is( 
+        input[type="text"], 
+        input[type="text"],  
+        input[type="tel"],  
+        input[type="mail"] , 
+        textarea ) {
+        flex: 1;
+    }
+}
+
+.w-100{
+    flex: 0 0 100%;
+}
+.campo textarea {
+    height: 4rem;
+}
+
+.enviar {
+    display: flex;
+    justify-content: flex-end;
+}
