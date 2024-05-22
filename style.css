@@ -287,6 +287,10 @@ footer ul li {
 
 /* CSS para Contacto */
 
+.fix {
+  position: fixed;
+}
+
 .contact_form_contacto {
   position: relative;
   margin: auto;
