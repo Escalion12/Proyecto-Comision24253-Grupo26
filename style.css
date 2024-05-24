@@ -643,6 +643,12 @@ footer ul li {
 .campo input[type="text"],
 .campo input[type="tel"],
 .campo input[type="mail"],
+.campo input[type="password"],
+.campo input[type="radio"],
+.campo input[type="date"],
+.campo input[type="file"],
+.campo input[type="submit"],
+.campo input[type="checkbox"],
 .campo textarea {
     width: 100%;
     padding: .5rem;
@@ -654,7 +660,13 @@ footer ul li {
         input[type="text"], 
         input[type="text"],  
         input[type="tel"],  
-        input[type="mail"] , 
+        input[type="mail"],
+        input[type="password"],
+        input[type="radio"],
+        input[type="date"],
+        input[type="file"],
+        input[type="submit"],
+        input[type="checkbox"],
         textarea ) {
         flex: 1;
     }
