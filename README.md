@@ -25,7 +25,7 @@ Solo Front end, app de podcast, donde se puede publicar tus pod cast y tambien e
 ![captura de pantalla de la pagina completa en su version de escritorio](https://i.imgur.com/lJccqX6.png)
 
 
-## Caracteristicas
+## Características
 
 - ✅ El sitio web debe poseer al menos 4 páginas HTML o 4 secciones si se trata de un sitio One Page.
 
