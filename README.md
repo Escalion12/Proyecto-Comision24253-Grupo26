@@ -16,7 +16,9 @@ Solo Front end, app de podcast, donde se puede publicar tus pod cast y tambien e
 - [Descripción](#descripción)
 - [Características](#caracteristicas)
 - [Demo](#demo)
+- [¡Próximamente!](#proximamente).
 - [Autores](#autores)
+
 
 ## Screenshot
 
@@ -53,6 +55,12 @@ La pagina completamente disponible esta en https://podcastcodoacodo.netlify.app/
 ## Validaciones
 
 Comprobamos que la semantica supere los chequeos de la pagina https://validator.w3.org/
+
+## ¡Próximamente!
+
+![](https://i.imgur.com/1ArsJlz.png)
+
+
 
 ![](https://i.imgur.com/qrXiKiJ.png)
 ## Autores
