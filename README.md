@@ -57,8 +57,8 @@ Comprobamos que la semantica supere los chequeos de la pagina https://validator.
 ![](https://i.imgur.com/qrXiKiJ.png)
 ## Autores
 
-- [Alan Plaza](https://github.com/1pome)
-- [@#](https://www.github.com/#)
-- [@#](https://www.github.com/#)
-- [@#](https://www.github.com/#)
+- [Alan Plaza](https://github.com/1pome) alanplaza1@gmail.com
+- [Tomas Caputo](https://github.com/Escalion12) tomas.caputo.1512@gmail.com
+- [Alexis Isla](https://github.com/AILexisIsla) alexis.isladev@gmail.com
+- [Ignacio Cámpora](https://github.com/ignaciocampora) ignacio.campora@gmail.com
 
