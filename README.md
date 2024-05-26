@@ -63,6 +63,8 @@ Comprobamos que la semantica supere los chequeos de la pagina https://validator.
 
 En la próxima versión estaremos incorporando nuevas funcionalidades al sitio web. A modo de ejemplo les dejamos una captura de pantalla.
 
+https://codoacodopodcastv2.netlify.app/
+
 ![](https://i.imgur.com/1ArsJlz.png)
 
 ## Autores
