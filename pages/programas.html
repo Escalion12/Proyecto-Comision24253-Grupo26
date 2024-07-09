@@ -49,13 +49,203 @@
         
     </header>
     <main>
-        <section class="container">
-        <div class="alert alert-success" role="alert">
-            <h1 class="alert-heading">¡Proximamente!</h1>
-            <p>Actualmente el sitio se encuentra en proceso de creación. No olvides suscribirte para recibir novedades y enterarte cuando estará listo.</p>
-            <hr>
-            <p class="mb-0">¡Disculpen las molestias!</p>
+        <section id="portadaAdmin">
+            <article
+              class="section hero"
+              aria-label="home"
+              style="background-image: url('./assets/images/shop-img-4port.jpg')"
+            >
+              <div class="container">
+                <div class="hero-content">
+                  <p class="hero-subtitle">Canal: Telefe Co.</p>
+    
+                  <h1 class="h1 hero-title">La vida es un juego</h1>
+    
+                  <p class="hero-text">
+                    Sobrevivir es solo el principio. Una historia reimaginada supone el
+                    renacimiento de un gigante del mundo.
+                  </p>
+                  <p class="hero-text">Periodistico</p>
+                  <p class="hero-text">Viale, TOTO, Dardo</p>
+                </div>
+                <figure
+                  class="hero-banner img-holder"
+                  style="--width: 900; --height: 700"
+                >
+                  <img
+                    src="../images/entretenimiento.png"
+                    width="200"
+                    height="200"
+                    alt="hero banner"
+                    class="w-100"
+                  />
+                </figure>
+              </div>
+            </article>
+          </section>
+    
+          <article>
+            <section
+              class="section shop"
+              id="shop"
+              aria-label="shop"
+              style="background-image: url('./assets/images/shop-bg.jpg')"
+            >
+              <div class="mb-5">
+                <h2 class="h2 section-title d-flex justify-content-center">
+                  <span class="span">Catalogo</span>
+                </h2>
+              </div>
+              <div class="container">
+                <section class="section brand" aria-label="brand">
+                  <section class="container">
+                    <ul class="row" id="catalogo"></ul>
+                  </section>
+                  <section>
+                    <hr />
+                    <div class="container-fluid mb-5">
+                      <div class="row">
+                        <button
+                          type="button"
+                          class="col-6 btn btn skewBg"
+                          id="nuevoJuego"
+                          data-bs-toggle="modal"
+                          data-bs-target="#NuevoJuego"
+                        >
+                          Cargar nuevo podcast
+                        </button>
+                        <button class="col-6 btn btn skewBg" id="btnDatosPrueba">
+                          Cargar datos de prueba
+                        </button>
+                      </div>
+                    </div>
+                  </section>
+                </section>
+              </div>
+            </section>
+          </article>
+        </main>
+    
+        <!-- #MODAL-NUEVO-->
+        <section
+          class="modal fade"
+          id="NuevoJuego"
+          tabindex="-1"
+          aria-labelledby="NuevoJuegoLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="NuevoJuegoLabel">
+                  Agregar nuevo juego
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <form id="formJuego">
+                  <div class="mb-3">
+                    <label for="codigo" class="form-label">Codigo</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="codigo"
+                      maxlength="6"
+                      value=""
+                      disabled
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="URL" class="form-label">URL - Imagen</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="URL"
+                      placeholder="https://127.0.0.1:8000/image.jpg"
+                      maxlength="200"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="nombre"
+                      placeholder="Ej: Iron Man"
+                      maxlength="30"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="categoria" class="form-label">Categoria</label>
+                    <textarea
+                      type="text"
+                      class="form-control"
+                      id="categoria"
+                      placeholder="Accion"
+                      maxlength="50"
+                      required
+                    ></textarea>
+                  </div>
+                  <div class="mb-3">
+                    <label for="precio" class="form-label">Precio</label>
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="precio"
+                      placeholder="200000"
+                      maxlength="6"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="descripcion" class="form-label">Descripcion</label>
+                    <textarea
+                      class="form-control"
+                      id="descripcion"
+                      rows="3"
+                      maxlength="500"
+                      required
+                    ></textarea>
+                  </div>
+                  <div class="d-flex justify-content-around m-3">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="publicar"
+                      />
+                      <label for="publicar" class="form-check-label"
+                        >Publicar</label
+                      >
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="destacar"
+                      />
+                      <label for="destacar" class="form-check-label"
+                        >Destacar</label
+                      >
+                    </div>
+                  </div>
+                  <button type="submit" class="btn skewBg">Guardar cambios</button>
+                </form>
+              </div>
+              <div class="modal-footer"></div>
+            </div>
           </div>
+        </section>
+        <!-- 
    
        
     </main>
